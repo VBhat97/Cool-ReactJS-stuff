@@ -1,10 +1,22 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Cool ReactJS stuffs</title>
+    <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js">
+
+    </script>
   </head>
   <body>
-
+    <div id="root"></div>
+    <script type="text/babel">
+      let city = "Mumbai"
+      ReactDOM.render(
+        <h1>Hello {city}</h1>,
+        document.getElementById("root")
+      );
+    </script>
   </body>
 </html>
