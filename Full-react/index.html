@@ -12,9 +12,25 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-      let city = "Mumbai"
+      const Lake = (props) => <h1>{props.name}</h1>;
+
+      class App extends React.Component{
+        state={
+          loggedIn: false
+        }
+        render(){
+          return (
+            <div>
+              <div>The user is {this.state.loggedIn ? "Logged In":"Nopes"}</div>
+              <Lake name="first"/>
+              <Lake name="second"/>
+              <Lake name="third"/>
+            </div>
+          )
+        }
+      }
       ReactDOM.render(
-        <h1>Hello {city}</h1>,
+        <App />,
         document.getElementById("root")
       );
     </script>
