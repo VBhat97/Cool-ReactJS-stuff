@@ -18,9 +18,13 @@
         state={
           loggedIn: false
         }
+        login=()=>this.setState({loggedIn:true})
+        logout=()=>this.setState({loggedIn:false})
         render(){
           return (
             <div>
+              <button onClick={this.login}>Login Toggle</button>
+              <button onClick={this.logout}>Logout Toggle</button>
               <div>The user is {this.state.loggedIn ? "Logged In":"Nopes"}</div>
               <Lake name="first"/>
               <Lake name="second"/>
