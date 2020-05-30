@@ -4,10 +4,19 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+class Message extends React.Component{
+  render(){
+    return(
+      <div>
+        <h1>Hello World!!</h1>
+      </div>
+    )
+  }
+}
+
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Message />,
   document.getElementById('root')
 );
 
