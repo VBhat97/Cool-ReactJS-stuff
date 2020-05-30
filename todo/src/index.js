@@ -4,19 +4,26 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-class Message extends React.Component{
-  render(){
-    return(
-      <div>
-        <h1>Hello World!!</h1>
-      </div>
-    )
-  }
+let Skiday={
+  total:20,
+  goal:10
 }
 
+const Skidata = (props) =>{
+  return (
+    <section>
+      <div>
+        Total : {props.total}
+      </div>
+      <div>
+        Goal : {props.goal}
+      </div>
+    </section>
+  )
+}
 
 ReactDOM.render(
-  <Message />,
+  <Skidata total={Skiday.total} goal={Skiday.goal}/>,
   document.getElementById('root')
 );
 
