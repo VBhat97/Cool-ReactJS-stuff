@@ -5,14 +5,35 @@ import AddAppointments from './AddAppointment';
 import SearchAppointments from './SearchAppointment';
 import ListAppointments from './ListAppointment';
 
+import {without} from 'lodash';
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
       myName: 'Ray',
-      myAppointments: []
+      myAppointments: [],
+      formDisplay: true
     };
+    this.deleteAppointment=this.deleteAppointment.bind(this);
+    this.toggleForm=this.toggleForm.bind(this);
   }
+
+  deleteAppointment(apt){
+    let tempApts = this.state.myAppointments;
+    tempApts = without(tempApts,apt)
+    this.setState({
+      myAppointments: tempApts
+    });
+
+  }
+  
+  toggleForm(){
+    this.setState({
+      formDisplay: !this.state.formDisplay
+    });
+  }
+
   componentDidMount() {
     fetch('./data.json')
       .then(response => response.json())
@@ -33,9 +54,9 @@ class App extends Component {
           <div className="row">
             <div className="col-md-12 bg-white">
               <div className="container">
-                <AddAppointments />
+                <AddAppointments formDisplay={this.state.formDisplay} toggleForm={this.toggleForm} />
                 <SearchAppointments />
-                <ListAppointments appointments={this.state.myAppointments} />
+                <ListAppointments appointments={this.state.myAppointments} deleteAppointment={this.deleteAppointment}/>
               </div>
             </div>
           </div>
