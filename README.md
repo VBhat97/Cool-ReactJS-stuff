@@ -1,1 +1,1 @@
-# Learning and creating new ReactJS stuffs via this repo.
+# Learning and creating new ReactJS stuffs via this repository.
