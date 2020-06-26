@@ -1,10 +1,11 @@
 import React from 'react';
 import '../css/App.css';
+import Bodytags from './Bodytags';
 
 function App() {
   return (
     <div>
-      Hello World
+      <Bodytags />
     </div>
   );
 }
