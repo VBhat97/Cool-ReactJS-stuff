@@ -45,6 +45,7 @@ class Header extends Component{
               <Nav.Link onClick={() => this.hideComponent("showHideDemo3")}>Upload</Nav.Link>
             </Nav>
             </Navbar>
+            {/* TODO: Add Proper function calls for calling proper body content */}
             {showHideDemo1 && <HomeBody />}
             {showHideDemo2 && <AboutBody />}
             {showHideDemo3 && <UploadBody />}
