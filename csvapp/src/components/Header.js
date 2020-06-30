@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import { Nav, Navbar} from 'react-bootstrap';
+import HomeBody from './HomeBody.js';
+import AboutBody from './AboutBody.js';
+import UploadBody from './UploadBody.js';
 
 class Header extends Component{
 
@@ -31,6 +34,7 @@ class Header extends Component{
         }
       }
     render(){
+        const { showHideDemo1, showHideDemo2, showHideDemo3 } = this.state;
         return(
             <div>
             <Navbar bg="dark" variant="dark">
@@ -40,8 +44,11 @@ class Header extends Component{
               <Nav.Link onClick={() => this.hideComponent("showHideDemo2")}>About</Nav.Link>
               <Nav.Link onClick={() => this.hideComponent("showHideDemo3")}>Upload</Nav.Link>
             </Nav>
-          </Navbar>
-          </div>
+            </Navbar>
+            {showHideDemo1 && <HomeBody />}
+            {showHideDemo2 && <AboutBody />}
+            {showHideDemo3 && <UploadBody />}
+            </div>
         )
     }
 }
