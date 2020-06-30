@@ -4,7 +4,7 @@ class HomeBody extends Component{
     render(){
         return(
             <div>
-                Adding the home content
+                Adding the home content next
             </div>
         )
     }
