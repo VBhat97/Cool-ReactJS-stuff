@@ -8,9 +8,9 @@ class Header extends Component{
             <Navbar bg="dark" variant="dark">
             <Navbar.Brand href="#home">CSVApp</Navbar.Brand>
             <Nav className="mr-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">About</Nav.Link>
-              <Nav.Link href="#pricing">Upload</Nav.Link>
+              <Nav.Link href="#home" onClick={props.home}>Home</Nav.Link>
+              <Nav.Link href="#features" onClick={props.about}>About</Nav.Link>
+              <Nav.Link href="#pricing" onClick={props.upload}>Upload</Nav.Link>
             </Nav>
           </Navbar>
           </div>
