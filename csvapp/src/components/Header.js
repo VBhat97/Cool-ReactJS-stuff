@@ -9,8 +9,7 @@ class Header extends Component{
     constructor() {
         super();
         this.state = {
-          name: "React",
-          showHomeBody: false,
+          showHomeBody: true,
           showAboutBody: false,
           showUploadBody: false
         };
@@ -18,16 +17,15 @@ class Header extends Component{
       }
 
       hideComponent(name) {
-        console.log(name)
         switch (name) {
           case "showHomeBody":
-            this.setState({ showHomeBody: !this.state.showHomeBody, showAboutBody: false, showUploadBody: false });
+            this.setState({ showHomeBody: true, showAboutBody: false, showUploadBody: false });
             break;
           case "showAboutBody":
-            this.setState({ showAboutBody: !this.state.showAboutBody });
+            this.setState({ showAboutBody: true, showHomeBody: false, showUploadBody: false });
             break;
           case "showUploadBody":
-            this.setState({ showUploadBody: !this.state.showUploadBody });
+            this.setState({ showUploadBody: true, showAboutBody: false, showUpHomeBody: false });
             break;
           default :
             console.log("Default")
