@@ -10,9 +10,9 @@ class Header extends Component{
         super();
         this.state = {
           name: "React",
-          showHideDemo1: false,
-          showHideDemo2: false,
-          showHideDemo3: false
+          showHomeBody: false,
+          showAboutBody: false,
+          showUploadBody: false
         };
         this.hideComponent = this.hideComponent.bind(this);
       }
@@ -20,35 +20,35 @@ class Header extends Component{
       hideComponent(name) {
         console.log(name)
         switch (name) {
-          case "showHideDemo1":
-            this.setState({ showHideDemo1: !this.state.showHideDemo1 });
+          case "showHomeBody":
+            this.setState({ showHomeBody: !this.state.showHomeBody, showAboutBody: false, showUploadBody: false });
             break;
-          case "showHideDemo2":
-            this.setState({ showHideDemo2: !this.state.showHideDemo2 });
+          case "showAboutBody":
+            this.setState({ showAboutBody: !this.state.showAboutBody });
             break;
-          case "showHideDemo3":
-            this.setState({ showHideDemo3: !this.state.showHideDemo3 });
+          case "showUploadBody":
+            this.setState({ showUploadBody: !this.state.showUploadBody });
             break;
           default :
             console.log("Default")
         }
       }
     render(){
-        const { showHideDemo1, showHideDemo2, showHideDemo3 } = this.state;
+        const { showHomeBody, showAboutBody, showUploadBody } = this.state;
         return(
             <div>
             <Navbar bg="dark" variant="dark">
             <Navbar.Brand href="#home">CSVApp</Navbar.Brand>
             <Nav className="mr-auto">
-              <Nav.Link onClick={() => this.hideComponent("showHideDemo1")}>Home</Nav.Link>
-              <Nav.Link onClick={() => this.hideComponent("showHideDemo2")}>About</Nav.Link>
-              <Nav.Link onClick={() => this.hideComponent("showHideDemo3")}>Upload</Nav.Link>
+              <Nav.Link onClick={() => this.hideComponent("showHomeBody")}>Home</Nav.Link>
+              <Nav.Link onClick={() => this.hideComponent("showAboutBody")}>About</Nav.Link>
+              <Nav.Link onClick={() => this.hideComponent("showUploadBody")}>Upload</Nav.Link>
             </Nav>
             </Navbar>
             {/* TODO: Add Proper function calls for calling proper body content */}
-            {showHideDemo1 && <HomeBody />}
-            {showHideDemo2 && <AboutBody />}
-            {showHideDemo3 && <UploadBody />}
+            {showHomeBody && <HomeBody />}
+            {showAboutBody && <AboutBody />}
+            {showUploadBody && <UploadBody />}
             </div>
         )
     }
