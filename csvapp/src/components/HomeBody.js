@@ -4,6 +4,7 @@ class HomeBody extends Component{
     render(){
         return(
             <div>
+                <h1>Hello World</h1>
                 <div id="Mainbody">
                 <br></br><br></br>
                 <center>

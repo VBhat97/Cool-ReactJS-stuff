@@ -25,7 +25,7 @@ class Header extends Component{
             this.setState({ showAboutBody: true, showHomeBody: false, showUploadBody: false });
             break;
           case "showUploadBody":
-            this.setState({ showUploadBody: true, showAboutBody: false, showUpHomeBody: false });
+            this.setState({ showUploadBody: true, showAboutBody: false, showHomeBody: false });
             break;
           default :
             console.log("Default")
