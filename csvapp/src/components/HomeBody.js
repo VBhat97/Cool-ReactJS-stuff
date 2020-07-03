@@ -11,8 +11,8 @@ class HomeBody extends Component{
                     <h1 id="keepwhite">Welcome to CSV Analytics Application</h1>
                 
                 <br></br><br></br>
-                <div class='parentdiv'>
-                    <div class='childdiv'>
+                <div className='parentdiv'>
+                    <div className='childdiv'>
                 <Card style={{ width: '18rem' }}>
                 <Card.Body>
                 <Card.Title>Card Title</Card.Title>
