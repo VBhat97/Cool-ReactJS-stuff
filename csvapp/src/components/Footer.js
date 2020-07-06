@@ -33,15 +33,6 @@ class Footer extends Component{
                     </p>
                </div>
            </div>
-           <div class="col-sm-4 col-xs-12 text-center border-left">
-            <h4 class="ft-text-title">About</h4>
-            <div class="pspt-dtls">
-                <a href="https://topline-tech.com" class="about">About</a>
-                <a href="https://topline-tech.com" class="team">Team</a>
-                <a href="https://topline-tech.com" class="advertise">Advertise</a>
-                <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-            </div>
-        </div>
     </div>
 	<div class="row ft-copyright pt-2 pb-2">
 		<div class="col-sm-4 text-pp-crt">cpoyright 2018 All  Rights Reserved</div>
