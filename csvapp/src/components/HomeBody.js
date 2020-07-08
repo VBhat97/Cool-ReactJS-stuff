@@ -5,7 +5,7 @@ class HomeBody extends Component{
     render(){
         return(
             <div>
-                <div id="Mainbody">
+                <div>
                 <br></br><br></br>
                 <center>
                     <h1 id="keepwhite">Welcome to CSV Analytics Application</h1>

@@ -7,10 +7,14 @@ class App extends Component {
   render(){
     return (
       <div>
+        <div id="Mainbody">
         <Header />
         {/* TODO: Add Form content by reading the csv and other parameters whichever needed */}
         {/* TODO: Add Footer with Copyright Components */}
+        <div id="main_footer">
         <Footer />
+        </div>
+        </div>
       </div>
     );
   }
