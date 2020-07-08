@@ -9,7 +9,7 @@ class Footer extends Component{
 		<div class="col-sm-4 text-pp-crt"></div>
 		<div class="col-sm-4 text-pp-crt-rg"></div>
 		<div class="col-sm-4 developer">
-			<a href="https://topline-tech.com" class="text-pp-crt">Copyright 2020 All  Rights Reserved</a>
+			<a href="https://github.com/VBhat97" class="text-pp-crt">Copyright 2020 All  Rights Reserved</a>
 		</div>
 	</div>
 </div>

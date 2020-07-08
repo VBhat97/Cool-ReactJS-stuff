@@ -10,7 +10,6 @@ class App extends Component {
         <div id="Mainbody">
         <Header />
         {/* TODO: Add Form content by reading the csv and other parameters whichever needed */}
-        {/* TODO: Add Footer with Copyright Components */}
         <div id="main_footer">
         <Footer />
         </div>
