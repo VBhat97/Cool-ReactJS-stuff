@@ -4,7 +4,7 @@ class UploadBody extends Component{
     render(){
         return(
             <div>
-                Testing the UploadBody part
+                <h1>Testing the UploadBody part</h1>
             </div>
         )
     }
