@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Card} from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
 
 class HomeBody extends Component{
     render(){

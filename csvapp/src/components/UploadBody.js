@@ -1,10 +1,16 @@
 import React, {Component} from 'react';
+import {Form} from 'react-bootstrap';
 
 class UploadBody extends Component{
     render(){
         return(
             <div>
-                <h1>Testing the UploadBody part</h1>
+                <br></br><br></br><br></br>
+                <Form id="Formcss">
+                <Form.Group>
+                    <Form.File id="exampleFormControlFile1" label="Browse your CSV" />
+                </Form.Group>
+                </Form>
             </div>
         )
     }
