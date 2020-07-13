@@ -184,3 +184,10 @@ i.develop {
 #Formcss {
   color: white;
 }
+
+#formMargin {
+  border: 5px solid white;
+  padding: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
