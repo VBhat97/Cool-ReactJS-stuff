@@ -6,11 +6,13 @@ class UploadBody extends Component{
         return(
             <div>
                 <br></br><br></br><br></br>
+                <center>
                 <Form id="Formcss">
                 <Form.Group>
                     <Form.File id="exampleFormControlFile1" label="Browse your CSV" />
                 </Form.Group>
                 </Form>
+                </center>
             </div>
         )
     }
