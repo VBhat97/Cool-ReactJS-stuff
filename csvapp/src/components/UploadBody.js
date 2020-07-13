@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Form} from 'react-bootstrap';
+import {Form, Button} from 'react-bootstrap';
 
 class UploadBody extends Component{
     render(){
@@ -11,6 +11,10 @@ class UploadBody extends Component{
                 <Form.Group>
                     <Form.File id="exampleFormControlFile1" label="Browse your CSV" />
                 </Form.Group>
+                <br></br><br></br><br></br>
+                <Button variant="primary" type="submit">
+                Submit
+                </Button>
                 </Form>
                 </div>
             </div>
