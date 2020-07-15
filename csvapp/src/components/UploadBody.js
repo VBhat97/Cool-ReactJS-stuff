@@ -9,11 +9,11 @@ class UploadBody extends Component{
                 <div id="formMargin">
                 <Form id="Formcss">
                 <Form.Group>
-                    <Form.File id="exampleFormControlFile1" label="Browse your CSV" />
+                    <Form.File id="exampleFormControlFile1" label="Browse your CSV-file" />
                 </Form.Group>
                 <br></br><br></br><br></br>
                 <Button variant="primary" type="submit">
-                Submit
+                    Submit
                 </Button>
                 </Form>
                 </div>
