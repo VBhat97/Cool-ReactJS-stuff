@@ -13,7 +13,7 @@ class UploadBody extends Component{
                 </Form.Group>
                 <br></br><br></br><br></br>
                 <Button variant="primary" type="submit">
-                    Submit Button
+                    Submit
                 </Button>
                 </Form>
                 </div>
