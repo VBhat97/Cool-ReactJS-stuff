@@ -17,6 +17,7 @@ class UploadBody extends Component{
                     </Form.Text>
                     </Form.Group>
                     <Form.Group>
+                        {/* TODO: After email address, try to pass the CSV file as well */}
                         <Form.File id="exampleFormControlFile1" label="Browse your CSV-file" />
                     </Form.Group>
                     <br></br><br></br><br></br>
