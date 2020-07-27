@@ -9,6 +9,7 @@ class UploadBody extends Component{
                 <div id="formMargin">
                 <Form id="Formcss">
                     <Form.Group controlId="formBasicEmail">
+                        {/* TODO: Connect this email address with the Flask backend */}
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
                     <Form.Text className="text-muted">
