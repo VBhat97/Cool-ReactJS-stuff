@@ -1,4 +1,3 @@
-// bring = (a) => { #Functions in ES6
-//   return a*a;
-// }
-// alert(bring(2))
+//Functions in ES6
+bring = (a) => a*a;
+alert(bring(2))
